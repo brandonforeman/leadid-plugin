@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "leadid",
+  "version": "0.1.0",
+  "description": "LeadID from FRG: read-only website-visitor lead intelligence. Search identified visitor leads, companies and contacts, list partner customers, check tracking-script installs (incl. GTM), and count leads over 1/7/30 days.",
+  "author": { "name": "Brandon Foreman" },
+  "keywords": ["leadid", "leads", "website-visitors", "lead-intelligence", "mcp"],
+  "license": "MIT",
+  "repository": "https://github.com/brandonforeman/leadid-plugin",
+  "homepage": "https://github.com/brandonforeman/leadid-plugin"
+}

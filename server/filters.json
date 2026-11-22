@@ -1,0 +1,528 @@
+{
+ "plusEmployee": {
+  "visitBeginDate": {
+   "type": "string",
+   "description": "Optional, search by the start date of the visit range."
+  },
+  "visitEndDate": {
+   "type": "string",
+   "description": "Optional, search by the end date of the visit range."
+  },
+  "jobTitles": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search by the visitor's job title."
+  },
+  "companyNames": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search by company names."
+  },
+  "companyDomains": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search by company domains."
+  },
+  "companyIndustries": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search by company industries."
+  },
+  "companyEmpoyeeSizeRanges": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search by company employee size range.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyEmployeeSizes."
+  },
+  "companyRevenueBandRanges": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search by company revenue band range.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyRevenueBands."
+  },
+  "firstName": {
+   "type": "string",
+   "description": "Optional, search by the visitor's first name."
+  },
+  "lastName": {
+   "type": "string",
+   "description": "Optional, search by the visitor's last name."
+  },
+  "emailAddress": {
+   "type": "string",
+   "description": "Optional, search by the visitor's email address."
+  },
+  "residentStates": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors in matching states.\nRequired values can be retrieved from the endpoint: /api/v1/reference/states."
+  },
+  "residentCities": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors in matching cities."
+  },
+  "residentZipCodes": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors in matching ZIP codes."
+  },
+  "domains": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors who visited a site with a matching domain."
+  },
+  "referralSources": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors who came from matching referral sources."
+  },
+  "keywords": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors with matching keywords in their searches."
+  },
+  "ipAddresses": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors from matching IP addresses."
+  },
+  "pageViewed": {
+   "type": "string",
+   "description": "Optional, search for visitors who viewed a matching page."
+  }
+ },
+ "plusPerson": {
+  "visitBeginDate": {
+   "type": "string",
+   "description": "Optional, search by the start date of the visit range"
+  },
+  "visitEnddate": {
+   "type": "string",
+   "description": "Optional, search by the start date of the visit range"
+  },
+  "firstName": {
+   "type": "string",
+   "description": "Optional, search by the visitor's first name"
+  },
+  "lastName": {
+   "type": "string",
+   "description": "Optional, search by the visitor's last name"
+  },
+  "emailAddress": {
+   "type": "string",
+   "description": "Optional, search by the visitor's email address"
+  },
+  "genders": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors having a matching gender\nRequired values can be retrieved from the endpoint: /api/v1/reference/genders."
+  },
+  "ageRanges": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors within a matching age range\nRequired values can be retrieved from the endpoint: /api/v1/reference/ageRanges."
+  },
+  "isMarried": {
+   "type": "boolean",
+   "description": "Optional, search for visitors with a matching marital status"
+  },
+  "hasChildren": {
+   "type": "boolean",
+   "description": "Optional, search for visitors with a matching parental status"
+  },
+  "residentStates": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors in matching states\nRequired values can be retrieved from the endpoint: /api/v1/reference/states."
+  },
+  "residentCities": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors in matching cities"
+  },
+  "residentZipCodes": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors in matching zip codes"
+  },
+  "annualIncomeRanges": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Search for visitors within a matching annual income range\nRequired values can be retrieved from the endpoint: /api/v1/reference/annualIncomeRanges."
+  },
+  "netWorthRanges": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors within a matching net worth range\nRequired values can be retrieved from the endpoint: /api/v1/reference/netWorthRanges."
+  },
+  "isHomeOwner": {
+   "type": "boolean",
+   "description": "Optional, search for visitors who own a home"
+  },
+  "domains": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitor who visited a site with a matching domain"
+  },
+  "referralSources": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors who came from matching referral sources"
+  },
+  "keywords": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors with matching keywords in their searches"
+  },
+  "ipAddresses": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, search for visitors from matching IP addresses"
+  },
+  "pageViewed": {
+   "type": "string",
+   "description": "Optional, search for visitors who viewed a matching page"
+  }
+ },
+ "company": {
+  "companyNames": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company names to filter by."
+  },
+  "companyWebsites": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company websites to filter by."
+  },
+  "companyIndustryValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company industries to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyIndustries."
+  },
+  "companySicValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company SIC codes to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companySics."
+  },
+  "companyNaicsValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company NAICS codes to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyNaics."
+  },
+  "companyEmployeeSizeValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company size identifiers to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyEmployeeSizes."
+  },
+  "companyRevenueBandValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company revenue identifiers to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyRevenueBands."
+  },
+  "companyLocationTypeValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of location types to filter by (e.g., headquarters, branch).\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyLocationType."
+  },
+  "countryValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of countries to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/countries."
+  },
+  "stateValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of states to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/states."
+  },
+  "cities": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of cities to filter by."
+  },
+  "zipCodes": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of zip codes to filter by."
+  }
+ },
+ "contact": {
+  "jobTitles": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of contact job titles to filter by."
+  },
+  "jobLevelValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of contact job levels to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/jobLevels."
+  },
+  "jobFunctionValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of contact job functions to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/jobFunctions."
+  },
+  "jobStartDateValue": {
+   "type": "string",
+   "description": "Optional, the start date of the contact's current job.\nRequired values can be retrieved from the endpoint: /api/v1/reference/jobStartDates."
+  },
+  "jobsRecentlyChanged": {
+   "type": "boolean",
+   "description": "Optional, Indicates if the contact has changed jobs recently."
+  },
+  "companyNames": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company names to filter by."
+  },
+  "companyWebsites": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company websites to filter by."
+  },
+  "companyIndustryValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "The list of company industries to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyIndustries."
+  },
+  "companySicValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company SIC codes to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companySics."
+  },
+  "companyNaicsValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company NAICS codes to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyNaics."
+  },
+  "companyEmployeeSizeVaules": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company size identifiers to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyEmployeeSizes."
+  },
+  "companyRevenueBandValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of company revenue bands to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/companyRevenueBands."
+  },
+  "addressTypeValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of address types to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/addressTypes."
+  },
+  "countryValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of countries to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/countries."
+  },
+  "stateValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of states to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/states."
+  },
+  "cities": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of cities to filter by."
+  },
+  "zipCodes": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of zip codes to filter by."
+  },
+  "firstName": {
+   "type": "string",
+   "description": "Optional, the first name of the contact."
+  },
+  "lastName": {
+   "type": "string",
+   "description": "Optional, the last name of the contact."
+  },
+  "genderValues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of genders to filter by.\nRequired values can be retrieved from the endpoint: /api/v1/reference/genders."
+  },
+  "almaMater": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of alma maters (schools) to filter by."
+  },
+  "fromAge": {
+   "type": "integer",
+   "description": "Optional, the minimum age of the contact."
+  },
+  "toAge": {
+   "type": "integer",
+   "description": "Optional, the maximum age of the contact."
+  },
+  "skills": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of contact skills to filter by."
+  },
+  "formerEmployer": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of former employers to filter by."
+  },
+  "personalEmailOnly": {
+   "type": "boolean",
+   "description": "Optional, Indicates if only personal emails should be included in the search."
+  },
+  "cellPhoneRequired": {
+   "type": "boolean",
+   "description": "Optional, Indicates if a cell phone number is required."
+  },
+  "urlsToSuppress": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of URLs to suppress from the search."
+  },
+  "titlesToSuppress": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of titles to suppress from the search."
+  },
+  "emailsToSuppress": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Optional, the list of emails to suppress from the search."
+  },
+  "primaryContactsOnly": {
+   "type": "boolean",
+   "description": "Optional, Indicates if only primary contacts should be included in the search."
+  },
+  "professionalEmailRequired": {
+   "type": "boolean",
+   "description": "Optional, Indicates if professional emails are required."
+  },
+  "emailConfidenceScore": {
+   "type": "integer",
+   "description": "Optional, the minimum email confidence score required for the search."
+  },
+  "deterministicEmailsOnly": {
+   "type": "boolean",
+   "description": "Optional, Indicates that only contacts using catch-all professional email addresses."
+  },
+  "phoneRequired": {
+   "type": "boolean",
+   "description": "Indicates if the contact must have a phone number."
+  }
+ }
+}

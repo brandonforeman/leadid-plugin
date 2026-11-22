@@ -1,0 +1,7 @@
+docs-cache/
+node_modules/
+.env
+.env.*
+api-key
+*.log
+.DS_Store
